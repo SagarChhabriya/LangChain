@@ -1,10 +1,12 @@
 from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
 
+# .env file must contain api key in a variable named OPENAI_API_KEY
 load_dotenv()
 
 # Load Chat Model
 chat_model = ChatOpenAI(model="gpt-4")
+
 
 # chat_model = ChatOpenAI(model="gpt-4", temperature)
 
