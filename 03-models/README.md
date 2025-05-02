@@ -121,3 +121,50 @@ uv run main.py
 uv add pandas
 uv build
 ```
+
+---
+
+# Open Source Models
+Open-source language models are freely available AI models that can be downloaded, modified, fine-tuned, and deployed without restrictions from a central provider. Unlike closed-source models such as OpenAI's GPT-4, Anthropic's Claude, or Google's Gemini, open-source models allow full control and customization.
+
+|Feature | Open-Source Models | Closed-Source Models |
+|--------|--------------------|----------------------|
+|Cost    | Free-to-use (no API cost)| Paid API usage (e.g., OpenAI charges per token)|
+| Control| Can modify, fine-tune, and deploy anywhere | Locked to provider's infrastructure|
+| Data Privacy | Runs locally (no data sent to external servers) | Sends queries to provider's servers |
+| Customization | Can fine-tune on specific datasets | No access to fine-tuning in most cases |
+| Deployment | Can be deployed on *on-premise* servers or cloud | Must use vendor's API|
+
+
+## Some Famous Open Source Models
+
+| Model | Developer | Parameters | Best Use Case |
+|-------|-----------|------------|---------------|
+| LLaMa-2-7B/13B/70B | MetaAI | 7B - 70B | General Purpose text-generation |
+| Mixtral-8x7B | Mistral AI | 8x7B (MoE) | Efficient & fast responses |
+| Mistral-7B | Mistral AI | 7B | Best small-scale model (outperforms LLaMa-2-13B)|
+| Falcon-7B/40B | Tll UAE | 7B - 40B | High Speed inference | 
+| BLOOM-176B | BigScience | 176B | Multilingual text generation|
+| GPT-J-6B | EleutherAI | 6B | Lightweight and Efficient |
+| GPT-NeoX-20B | EleutherAI | 20B | Large-scale applications |
+| StableLM | StableAI | 3B-7B | Compact models for chatbots |   
+
+
+### Where to Find them?
+HuggingFace - The largest repository of open-source LLMs.
+
+
+### Ways to use open-source models?
+
+1. Using HuggingFace inference API
+2. Running Locally
+
+
+### Disadvantages of Open-Source Models 
+
+| Disadvantages | Details | 
+|---------------|---------|
+|High Hardware Requirements  | Running large models (e.g., LLaMA-2-70B) requires GPUs.|
+| Setup Complexity | Requires installation of dependencies like `PyTorch`, `CUDA`, `trasnformers`|
+| Lack of RLHF | Most open-source models don't have `fine-tuning with human feedback`, making then weaker in instruction following|
+| Limited Multimodal Abilities | Open source models don't support `images`, `audio`, or `video` like GPT-4V.|
