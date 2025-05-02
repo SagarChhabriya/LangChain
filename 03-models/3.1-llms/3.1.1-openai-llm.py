@@ -1,3 +1,4 @@
+# Paid
 # Now we shouldn't use this code. It's old and now we should use chat models.
 from langchain_openai import OpenAI 
 from dotenv import load_dotenv
