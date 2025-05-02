@@ -36,27 +36,75 @@ Language models that are specialized for conversational tasks. They take a seque
 
 
 
-### Setting up Env
-1. Create a new folder
-2. open it in vs code
-3. create a new venv
-    ```js
-        python -m venv venv
-    ```
+### Setting up Env: Using `pip` (Traditional)
 
-4. activate venv
-    ```js
-        venv\Scripts\activate
-    ```
-   If you encounter an execution policy error: 
-    
-    ```js
-        Set-ExecutionPolicy RemoteSigned -Scope Process
-    ```
-5. Create the requirements.txt
-6. install packages from requirements.txt
-    pip install -r requirements.txt
-7. verify LangChain installation
+1. **Create a new project folder**
+
+2. **Open the folder in VS Code**
+
+3. **Create a virtual environment**
+
+   ```bash
+   python -m venv venv
+   ```
+
+4. **Activate the virtual environment**
+   On PowerShell:
+
+   ```bash
+   .\venv\Scripts\Activate
+   ```
+
+5. **(Optional) If you encounter an execution policy error**, run:
+
+   ```bash
+   Set-ExecutionPolicy RemoteSigned -Scope Process
+   ```
+
+6. **Create a `requirements.txt` file** and add the necessary dependencies:
+
+```py
+    # LangChain Core
+    langchain
+    langchain-core
+
+    # OpenAI Integration
+    langchain-openai
+    openai
+
+    # Anthropic Integration
+    langchain-anthropic
+
+    # Google Gemini (PaLM) Integration
+    langchain-google-genai
+    google-generativeai
+
+    # Hugging Face Integration
+    langchain-huggingface
+    transformers
+    huggingface-hub
+
+    # Environment Variable Management
+    python-dotenv
+
+    # Machine Learning Utilities
+    numpy
+    scikit-learn
+```
+
+7. **Install the packages**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+8. **Verify the installation**
+
+   ```python
+   import langchain
+   print(langchain.__version__)
+   ```
+
 
 ### With uv package manager
 
