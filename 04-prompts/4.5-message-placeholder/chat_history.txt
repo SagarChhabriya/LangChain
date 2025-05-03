@@ -1,0 +1,1 @@
+messages=[SystemMessage(content='You are a helpful RAG assistant', additional_kwargs={}, response_metadata={}), HumanMessage(content='Explain in simple terms, what is Vector DB', additional_kwargs={}, response_metadata={})]
