@@ -31,3 +31,10 @@ parser = StrOutputParser()
 chain = prompt1 | chat_model | parser | prompt2 | chat_model | parser
 result = chain.invoke({"topic":"Coding in night"})
 print(result)
+
+# Output:
+# * **Increased Focus and Flow:** Nighttime coding offers fewer distractions, promoting deeper concentration and extended periods of uninterrupted work.
+# * **Potential for Better Alignment with Chronotype:**  Individuals who are naturally more productive at night can leverage their peak performance during these hours.
+# * **Risk of Disrupted Sleep and Health Issues:**  Regular late-night coding can negatively impact sleep, leading to various physical and mental health problems.
+# * **Social Isolation and Collaboration Challenges:** Working non-traditional hours can hinder social interaction and make collaborating with teams on standard schedules difficult.
+# * **Mitigation Requires Proactive Health Management:**  Successful nighttime coding requires conscious efforts to maintain a healthy sleep schedule, diet, regular breaks, and social connections.
