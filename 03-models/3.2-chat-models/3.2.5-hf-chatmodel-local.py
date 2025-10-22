@@ -1,6 +1,6 @@
 from langchain_huggingface import ChatHuggingFace, HuggingFacePipeline
 
-# My C Drive is don't have enough space that is the default location when model is downloaded
+# Specify the download path. Default is Disk C 
 import os 
 os.environ['HF_HOME'] = "D:/huggingface_cache"
 
